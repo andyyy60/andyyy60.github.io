@@ -1,67 +1,74 @@
 # Basics of Java
 
-In this section we cover the very basics of Java: primitive data types, operators, printing, conditional statements, and loops.
+### Table of Contents
+1. Data Types
+a. What is a primitive data type?
+c. Declaring variables
+d. Using operators
+e. Using strings
+
 
 ---
 
 ## Primitive Data Types
 
-There are eight primitive data types in Java:
+##### What is a primitive data type?
+
+tha *primitive* data type is composed of no other data types and cannot be broken down any further. It does not contain any dot operators or helper classes and nothing can be derived from it.
+For example, an `int` cannot be broken down any further, while `Integer` is an *object* and can be broken down to its components.
 
 `boolean`
-
-* Description: **true or false**
-* Default: `false`
-* Size: **1 bit**
+Use this data type for simple flags that track true/false conditions
+* Description: Has only two possible values ``true`` or ``false``
+* Default value: `false`
 * Example literals: `true`, `false`
 
-`byte`
 
-* Description: **twos complement integer**
+
+`byte`
+Use this data type for saving memory in large arrays (where memory actually matters). They can also be used in place of int where their limits help to clarify your code, read more about ``byte`` [here](https://docs.oracle.com/javase/7/docs/api/java/lang/Byte.html).
+* Description:  Has a minimum value of -128 and a maximum value of 127 (inclusive), 8-bit signed two's complement integer.
 * Default:  `0`
-* Size:  **8 bits**
 * Example literals: **(none)**
 
 `char`
+Use this data type when dealing with single Unicode characters.
 
-* Description: **Unicode character**
+* Description: The char data type is a single 16-bit Unicode character.
 * Default:  `\u0000`
-* Size:  **16 bits**
 * Example literals: `'a'`, `'\u0041'`, `'\\'`
 
 `short`
-
-* Description: **twos complement integer**
+Just like ``byte``, use this data type for saving memory in large arrays (where memory actually matters). Read more about ``short``  [here](https://docs.oracle.com/javase/7/docs/api/java/lang/Short.html).
+* Description: Has a minimum value of -32,768 and a maximum value of 32,767 (inclusive). 16-bit signed two's complement integer. 
 * Default:  `0`
-* Size:  **16 bits**
 * Example literals: **(none)**
 
 `int`
+Use this data type to store numbers up to (2^31)-1. The object counterpart ``Integer`` allows methods such as ``compareUnsigned``.
 
-* Description: **twos complement integer**
+* Description: 32-bit signed two's complement integer, has a minimum value of -2^31 and a maximum value of (2^31)-1.
 * Default:  `0`
-* Size:  **32 bits**
 * Example literals: `-2`, `-1`, `0`, `1`, `2`
 
 `long`
-
-* Description: **twos complement integer**
+Use this data type to store big integers > (2^31)-1 that would not fit in an ``int`` variable otherwise
+* Description: This data type is a long version of ``int``, it allows for bigger values to be stored in a variable,  the signed long has a minimum value of -263 and a maximum value of 263-1 (64-bit signed two's complement integer).
 * Default:  `0`
-* Size:  **64 bits**
 * Example literals: `-2L`, `-1L`, `0L`, `1L`, `2L`
 
 `float`
+As with short and byte, use a float if you need to save memory in large arrays of floating point numbers, if precision is necessary, use ``double``
 
-* Description: **IEEE 754 floating point**
+* Description: This data type allows for decimal numbers to be stored with single-precision of 32-bits.
 * Default:  `0.0`
-* Size:  **32 bits**
 * Example literals: `1.23e100f`, `-1.23e-100f`, `.3f`, `3.14F`
 
 `double`
+Use this data type when dealing with decimal numbers (ex. ``0.0``)
 
-* Description: **IEEE 754 floating point**
+* Description: Another decimal number primitive type. Usually the default type for decimal points, stores with twice as much precision as float with 64-bit IEEE 754 floating point.
 * Default:  `0.0`
-* Size:  **64 bits**
 * Example literals: `1.23456e300d`, `-1.23456e-300d`, `1e1d`
 
 ---
