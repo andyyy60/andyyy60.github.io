@@ -3,9 +3,12 @@
 ### Table of Contents
 1. Data Types
 a. What is a primitive data type?
-c. Declaring variables
-d. Using operators
-e. Using strings
+2. Variables
+a. Declaring variables
+3. Operators
+a. Arithmetic operators
+b. Relational operators
+4. Strings
 
 
 ---
@@ -73,6 +76,31 @@ Use this data type when dealing with decimal numbers (ex. ``0.0``)
 
 ---
 
+## Variables
+
+##### Declaring variables
+To declare a variable, pick a name that describes the content of it and write it in the following syntax: [*type*] [*variable name*]
+Examples:
+
+    int myNumber;
+    myNumber = 5;
+
+Or combine them into one line:
+
+    int myNumber = 5;
+
+To define a decimal number:
+
+    double d = 4.5;
+
+To define a decimal number of type ``float``
+
+    float f = (float) 4.5; //changes f from default double to float
+    
+or
+
+    float f = 4.5f; // shorter way to change double to float
+
 ## Operators
 
 Next, we cover arithmetic & relational operators.
@@ -81,33 +109,84 @@ Next, we cover arithmetic & relational operators.
 
 `+` addition
 
+    int additionExample = 9 + 10;
+
 `-` subtraction
+
+    int substractionExample = 9 - 10;
+
 
 `*` multiplication
 
+    int multiplicationExample = 2 * 4;
+
 `/` division
+
+    int divisionExample = 8/2;
 
 `%` modulus
 
+    int modulusExample = 8%2;
+
 `++` increment
+    
+    int incrementExample = 1;
+    incrementExample++; // incrementExample contains 2 now
 
 `--` decrement
+
+    int decrementExample = 1;
+    decrementExample--; // decrementExample contains 0 now
 
 ### Relational
 
 `==` equal to
 
+    int left = 1;
+    int right = 1;
+    System.out.println( left == right ); //prints out "true" 
+
 `!=` not equal to
+
+    int left = 1;
+    int right = 0;
+    System.out.println( left != right ); //prints out "true" 
 
 `>` greater than
 
+    int left = 5;
+    int right = 12;
+    System.out.println( left > right ); //prints out "false" 
+
 `<` less than
+
+    int left = 5;
+    int right = 12;
+    System.out.println( left < right ); //prints out "true" 
 
 `>=` greater than or equal to
 
+    int left = 5;
+    int middle = 5
+    int right = 12;
+    System.out.println( left >= right ); //prints out "false" 
+    System.out.println( left >= middle ); //prints out "true" 
+
+
 `<=` less than or equal to
 
+    int left = 5;
+    int middle = 5
+    int right = 12;
+    System.out.println( left <= right ); //prints out "true" 
+    System.out.println( left >= middle ); //prints out "true" 
+
 ---
+
+### Strings
+
+
+
 
 ## Hello World
 
