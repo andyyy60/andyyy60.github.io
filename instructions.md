@@ -9,6 +9,8 @@ a. Declaring variables
 a. Arithmetic operators
 b. Relational operators
 4. Strings
+a. Creating strings
+b. Using string operators
 
 
 ---
@@ -79,6 +81,18 @@ Use this data type when dealing with decimal numbers (ex. ``0.0``)
 ## Variables
 
 ##### Declaring variables
+
+To declare a variable in java, you have to specify it’s type. If I want a variable to hold the number 3, I have to tell java I want it to store an integer and then I tell it the integer to store, like so:
+
+        int myVariable = 3;
+
+If I want to reassign the value of a variable, can just do this:
+
+        int myVariable2;
+        myVariable2 = 4;
+
+I can only do this type of declaration because myVariable2 was initialized as type int. Initially it has no value attached to it, but then the next line assigns it the value 4. The same process can be done with any primitive type or string, but an object from a class is a special case.
+
 To declare a variable, pick a name that describes the content of it and write it in the following syntax: [*type*] [*variable name*]
 Examples:
 
@@ -183,9 +197,32 @@ Next, we cover arithmetic & relational operators.
 
 ---
 
-### Strings
+## Strings
 
+Strings are a sequence of characters. In Java, they are objects (meaning they can be broken down and you can use operators in them)
 
+#### Creating Strings
+To create a string, declare a variable of type ``String``
+
+    String greeting = "Hello world!";
+
+#### Using string operators
+
+Because String is a class, it contains built-in functions that can be used with any varible of type ``String``.
+
+##### Length of a String
+
+    String sentence = "Please excuse my dear aunt sally";
+    int length = sentence.length(); //contains the number of characters in variable sentence
+
+##### Combining two strings together
+
+This is also know as 'concatenating' two strings.
+
+    String str1 = "my favorite food is";
+    String str2 = "pizza";
+    String sentence = string1.concat(string2); // "my favorite food is pizza"
+    
 
 
 ## Hello World
