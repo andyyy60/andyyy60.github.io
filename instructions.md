@@ -2,14 +2,23 @@
 
 ### Table of Contents
 1. Data Types
+
 a. What is a primitive data type?
+
 2. Variables
+
 a. Declaring variables
+
 3. Operators
+
 a. Arithmetic operators
+
 b. Relational operators
+
 4. Strings
+
 a. Creating strings
+
 b. Using string operators
 
 
