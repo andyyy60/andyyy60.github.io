@@ -130,24 +130,24 @@ Next, we cover arithmetic & relational operators.
 
 `+` addition
 
-    int additionExample = 9 + 10;
+    int additionExample = 9 + 10; //additionExample now contains 19
 
 `-` subtraction
 
-    int substractionExample = 9 - 10;
+    int substractionExample = 9 - 10; substractionExample now contains -1
 
 
 `*` multiplication
 
-    int multiplicationExample = 2 * 4;
+    int multiplicationExample = 2 * 4; //multiplicationExample now contains 8
 
 `/` division
 
-    int divisionExample = 8/2;
+    int divisionExample = 8/2; //divisionExample now contains 4
 
 `%` modulus
 
-    int modulusExample = 8%2;
+    int modulusExample = 8%2; //modulus example now contains 0
 
 `++` increment
     
