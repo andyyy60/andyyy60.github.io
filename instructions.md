@@ -2,9 +2,7 @@
 
 ### Table of Contents
 1. Data Types
-
-a. What is a primitive data type?
-
+- What is a primitive data type?
 2. Variables
 
 a. Declaring variables
@@ -93,12 +91,12 @@ Use this data type when dealing with decimal numbers (ex. ``0.0``)
 
 To declare a variable in java, you have to specify it’s type. If I want a variable to hold the number 3, I have to tell java I want it to store an integer and then I tell it the integer to store, like so:
 
-        int myVariable = 3;
+	int myVariable = 3;
 
 If I want to reassign the value of a variable, can just do this:
 
-        int myVariable2;
-        myVariable2 = 4;
+	int myVariable2;
+	myVariable2 = 4;
 
 I can only do this type of declaration because myVariable2 was initialized as type int. Initially it has no value attached to it, but then the next line assigns it the value 4. The same process can be done with any primitive type or string, but an object from a class is a special case.
 
