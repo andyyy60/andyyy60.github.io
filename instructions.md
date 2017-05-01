@@ -134,7 +134,7 @@ Next, we cover arithmetic & relational operators.
 
 `-` subtraction
 
-    int substractionExample = 9 - 10; substractionExample now contains -1
+    int substractionExample = 9 - 10; //substractionExample now contains -1
 
 
 `*` multiplication
